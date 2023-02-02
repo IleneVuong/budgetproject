@@ -1,64 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visai</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="hero-img">
-        <div class="nav-bar">
-            <div class="logo">
-                <a href="index.html">
-                    <h1>Visai</h1>
-                </a>
-            </div>
-                <ul class="nav-selection">
-                    <li class="nav-items">
-                        <a href="">
-                            <h2>
-                                Home
-                            </h2>
-                        </a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="">
-                            <h2>
-                                Net Monthly Income
-                            </h2>
-                        </a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="">
-                            <h2>
-                                Balance a Checkbook/Check Register
-                            </h2>
-                        </a>
-                    </li>
-                </ul>
-        </div>
-    </div>
-<!-- Calculate Your Net Monthly Income - Section1 -->
-    <section class="nm-sec" id="section-net-monthly">
-        <h3>Calculate Your Net Monthly Income</h3>
-        <div>
-            <p>Choose A Career Option</p>
-            <ul id="myList"></ul>
-        </div>
-    </section>
+/*
+    IN ORDER TO USE THE DATA IN YOUR PROJECT, Initialize it like so:
 
-    <div class="house-payment-sec">
-        <h3>How Much of a House Payment Can You Afford?</h3>
-        <p>Gross Monthly Income x 33% = </p>
-        <p>Maximum Monthly House Payment</p>
-        <!-- Input spitter -->
-        <button>Calculate</button>
-    </div>
+    const data = require('./EECU-data.js).data;
 
-    <script>
-        let data = [
+    This is only an example. The variable name, variable type (const, let, var), and the require path
+    can all be changed to suit your needs.
+*/
+
+let data = [
     [ 'Accountant', 55650 ],
     [ 'Advance Tractor/Trailer Driver', 53550 ],
     [ 'Agricultural Engineer', 56700 ],
@@ -130,12 +79,5 @@
     [ 'Welder/Metal Specialist', 47250 ],
     [ 'Wind EnergyTechnician', 56700 ]
 ]
-    let list = document.getElementById("myList");
-    data.forEach((item)=>{
-        let li = document.createElement("li");
-        li.innerText = item;
-        list.appendChild(li);
-    })
-    </script>
-</body>
-</html>
+
+exports.data = data

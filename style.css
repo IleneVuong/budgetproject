@@ -1,0 +1,17 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drowdown-content {
+    display:none;
+    position:absolute;
+    
+}
+
+
