@@ -88,3 +88,8 @@ footer {
     min-height:15vw;
 }
 
+.gradient {
+    background: rgb(98,194,141);
+    background: linear-gradient(17deg, rgba(98,194,141,1) 2%, rgba(173,230,193,1) 37%, rgba(236,232,210,1) 65%, rgba(251,229,218,1) 81%);
+}
+
