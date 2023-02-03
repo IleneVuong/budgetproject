@@ -1,17 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=League+Spartan:wght@300;400;500;700&display=swap');
 * {
     margin:0;
     padding:0;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.hero-img {
+    background-image:url("img/indexhero.png");
+    min-height:60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position-y: center;
 }
 
-.drowdown-content {
-    display:none;
-    position:absolute;
-    
+a {
+    text-decoration: none;
 }
 
+h1 {
+    font-size:3vw;
+    font-family:"Aclonica", sans-serif;
+    padding-top:1vw;
+    padding-left:1vw;
+    color:#f4f4f4;
+}
+
+.nav-bar {
+    display:flex;
+    flex:wrap;
+    color:#FFFFFF;
+}
+
+.nav-selection {
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    padding-right:5vw;
+    padding-left:5vw;
+    padding-top:2vw;
+    width:80%;
+}
+
+h2 {
+  width:30vw;  
+  font-family:"League Spartan", sans-serif;
+  font-weight:500;
+  font-size:1.4vw;
+  color:#eaeaea;
+}
+
+h3 {
+    font-family:"League Spartan", sans-serif;
+    font-weight:bold;
+    font-size:3.5vw;
+    color:#8980F5;
+}
+
+p {
+    font-family:"League Spartan", sans-serif;
+}
+
+.make-choices {
+    padding-top:1.5vw;
+    font-size:1.3vw;
+    line-height:2vw;
+}
+
+.index-sect1 {
+    margin:8vw 20vw;
+}
+
+.get-started {
+    background-color: #8980F5;
+    color:#fafafa;
+    font-family:"League Spartan", sans-serif;
+    float:right;
+    padding:.8vw 1.5vw;
+    font-size:1.1vw;
+    margin-right:2vw;
+}
+
+.pattern {
+    background-image:url("img/pattern.png");
+}
+
+footer {
+    background-color:rgba(221, 107, 41, 0.687);
+    min-height:15vw;
+}
 
