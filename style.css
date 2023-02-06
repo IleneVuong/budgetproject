@@ -92,7 +92,8 @@ footer {
     min-height:15vw;
 }
 
-.gradient {
+.gradient,
+.net-monthly {
     background: rgb(98,194,141);
     background: linear-gradient(17deg, rgba(98,194,141,1) 2%, rgba(173,230,193,1) 37%, rgba(236,232,210,1) 65%, rgba(251,229,218,1) 81%);
 }
@@ -129,7 +130,7 @@ footer {
     font-size:1.5vw;
 }
 
-.career-input {
+.careerInput {
     width:100%;
     height:3vw;
     padding:0 1vw;
@@ -178,3 +179,143 @@ footer {
     background:#8980F5;
     padding:1.5vw 6vw;
 }
+
+.house-payment-sec {
+    display:flex;
+    flex:wrap;
+    justify-content:space-around;
+    margin: 0 15vw;
+    background:#004643;
+}
+
+.house-payment-sec img {
+    width: 35vw;
+}
+
+.house-payment-sec h3 {
+    color:#EFEFEF;
+    font-size: 2.9vw;
+    text-align: center;
+    padding: 3vw .5vw 8vw .5vw;
+}
+
+.house-payment-sec p {
+    color:#EFEFEF;
+    font-size:1.9vw;
+    text-align: center;
+}
+
+.paymentp {
+    font-weight:700;
+    padding-top:1vw;
+    padding-bottom:.6vw;
+}
+
+#paymentNumber {
+    width:3vw;
+    text-align:center;
+    margin-left:9vw;
+}
+
+.calculate {
+    padding: .5vw 1.5vw;
+    background-color:#000000;
+    font-family:"League Spartan", sans-serif;
+    font-size:1.2vw;
+    color:#EFEFEF;
+    margin-left:24vw;
+    margin-top:2vw;
+}
+
+.calculate:hover {
+    background-color:#000000ad;
+    border: #000000ad solid 2px;
+    transition: all 250ms ease;
+}
+
+.mountain-img {
+    background-image:url("img/mountain.png");
+    padding-bottom:3vw;
+}
+
+.taxes {
+    display:flex;
+    flex:wrap;
+    justify-content:center;
+    padding-top: 3vw;
+}
+
+.tax-input p,
+.tax-percent p,
+.tax-x p,
+.tax-decimal p,
+.tax-total-flex p {
+    padding:1.5vw 0;
+    font-size:1.9vw;
+}
+
+.tax-percent p,
+.tax-x p {
+    padding-right:1vw;
+}
+
+.tax-decimal p {
+    padding-left:1vw;
+}
+
+.tax-input {
+    width:30vw;
+}
+
+.tax-total-flex {
+    display:flex;
+    flex:wrap;
+    justify-content: space-between;
+}
+
+.empty {
+    background-color:#004643;
+    font-size:1.9vw;
+    padding:1.5vw 0;
+}
+
+.tax-input,
+.tax-output,
+.tax-total-flex {
+    margin:0 15vw;
+}
+
+.deductions h3 {
+    background:linear-gradient(17deg, rgba(98,194,141,1) 2%, rgba(173,230,193,1) 37%, rgba(236,232,210,1) 65%, rgba(251,229,218,1) 81%);
+    margin-top:5vw;
+    text-align: center;
+    padding: 2vw 0;
+}
+
+.total-deductions {
+    font-weight:700;
+}
+
+.net-monthly h4,
+.take-home {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-size:3vw;
+}
+
+.take-home {
+    font-size:2.5vw;
+    padding-top:.5vw;
+}
+
+.net-monthly h4 {
+    padding-top:2vw;
+}
+
+footer p {
+    color:#004643;
+    margin-left:1vw;
+    padding: 1vw 0;
+    
+}
+

@@ -47,7 +47,7 @@
             <div class="career-flex"> 
                 <p>Choose A Career Option</p>
                 <form class="career">
-                        <select class="career-input">
+                        <select class="careerInput">
                         <option>Accontant</option>
                         <option>Advance Tractor/Trailer Driver</option>
                         <option>Agricultural Engineer</option>
@@ -138,97 +138,112 @@
     </section>
 
     <div class="house-payment-sec">
-        <h3>How Much of a House Payment Can You Afford?</h3>
-        <p>Gross Monthly Income x 33% = </p>
-        <p>Maximum Monthly House Payment</p>
-        <!-- Input spitter -->
-        <button>Calculate</button>
+        <img src="img/house.png" alt="house" class="house">
+        <div class="house-flex">
+          <h3>How Much of a House Payment Can You Afford?</h3>
+            <p>Gross Monthly Income x 33% = </p>
+            <p class="paymentp">Maximum Monthly House Payment</p>
+            <p class="monthly-number" id="paymentNumber"></p>  <!-- change the class name -->
+            <button class="calculate">Calculate</button>
+        </div>
     </div>
 
-    <script src="java.js">
-//         let data = [
-//     [ 'Accountant', 55650 ],
-//     [ 'Advance Tractor/Trailer Driver', 53550 ],
-//     [ 'Agricultural Engineer', 56700 ],
-//     [ 'Architect', 53550 ],
-//     [ 'Auto Tech/Mechanic', 49350 ],
-//     [ 'Aviation Tech. Mechanic', 50400 ],
-//     [ 'Biologist', 54600 ],
-//     [ 'Bus Driver', 37800 ],
-//     [ 'Business Development Officer', 54600 ],
-//     [ 'Business Manager Hotel etc.', 61950 ],
-//     [ 'CNC Manufacturing', 80850 ],
-//     [ 'Carpenter', 47250 ],
-//     [ 'Chef', 52500 ],
-//     [ 'Chemist', 56700 ],
-//     [ 'Civil Engineering Technician', 68250 ],
-//     [ 'Commercial Driver', 51450 ],
-//     [ 'ComputerTechnician', 46200 ],
-//     [ 'Conserv./Environ. Science', 72450 ],
-//     [ 'Correctional Officer', 48300 ],
-//     [ 'Cosmetologist', 36750 ],
-//     [ 'Credit Union/Bank Manager', 61950 ],
-//     [ 'Daycare Director', 37800 ],
-//     [ 'Dentist', 115500 ],
-//     [ 'Detective', 60900 ],
-//     [ 'Diesel Tech/Mechanic', 55650 ],
-//     [ 'Doctor/Physician', 147000 ],
-//     [ 'Electrician', 54600 ],
-//     [ 'Electronic Engineer', 75600 ],
-//     [ 'EMT', 34650 ],
-//     [ 'Energy Management PG&E', 106050 ],
-//     [ 'Engineer', 72450 ],
-//     [ 'Fashion Designer', 63000 ],
-//     [ 'Fire Fighter', 49350 ],
-//     [ 'Forest Ranger', 52500 ],
-//     [ 'Graphic/Media Designer', 58800 ],
-//     [ 'H/C HVAC', 63000 ],
-//     [ 'Highway Patrol', 84000 ],
-//     [ 'Home Inspector', 56700 ],
-//     [ 'Industrial Mechanic', 46200 ],
-//     [ 'Interior Designer', 49350 ],
-//     [ 'Investment Analyst', 66150 ],
-//     [ 'Lab Technician', 42000 ],
-//     [ 'Landscaper Horticulture', 48300 ],
-//     [ 'lawyer', 86100 ],
-//     [ 'Marketing/Sales Manager', 58800 ],
-//     [ 'Media/Communications', 45150 ],
-//     [ 'Medical RepairTech.', 52500 ],
-//     [ 'Military', 55650 ],
-//     [ 'Nuse', 66150 ],
-//     [ 'Nutitionist', 45150 ],
-//     [ 'Oceanographer', 69300 ],
-//     [ 'Pastor', 50400 ],
-//     [ 'PGBEATT Technician', 78750 ],
-//     [ 'Pharmacist', 105000 ],
-//     [ 'Photographer', 45150 ],
-//     [ 'Physical Therapist', 72450 ],
-//     [ 'Pilot Commercial', 78750 ],
-//     [ 'Plumber', 52500 ],
-//     [ 'Police Officer', 53550 ],
-//     [ 'Principal', 93450 ],
-//     [ 'Probation Officer', 44100 ],
-//     [ 'Psychologist', 77700 ],
-//     [ 'Retail Sales Associate', 34650 ],
-//     [ 'Social Worker', 50400 ],
-//     [ 'Solar Energy Tech.', 53550 ],
-//     [ 'Teacher', 52500 ],
-//     [ 'UPS/Fed Ex Driver', 68250 ],
-//     [ 'Veterinarian', 82950 ],
-//     [ 'Welder/Metal Specialist', 47250 ],
-//     [ 'Wind EnergyTechnician', 56700 ]
-// ]
-    
-//    onEvent(getElementById("calculateGmi"), "click", function divideBy12() {
+   <section class="deductions">
+        <h3>Pay Period Deductions</h3>
+        <div class="mountain-img">
+            <div class="taxes">
+                <div class="tax-input">
+                <p>Federal Taxes</p>
+                <p>State Taxes</p>
+                <p>Social Security</p>
+                <p>Medicare</p>
+                <p>State Disability</p>
+                <p>Retirement Investment</p>
+                <p>Medical Insurance</p>  
+                </div>
+                <div class="tax-percent">
+                    <p>12%</p>
+                    <p>7%</p>
+                    <p>6.2%</p>
+                    <p>1.45%</p>
+                    <p>1%</p>
+                    <p>5%</p>
+                </div>
+                <div class="tax-x">
+                    <p>x</p>
+                    <p>x</p>
+                    <p>x</p>
+                    <p>x</p>
+                    <p>x</p>
+                    <p>x</p>
+                </div>
+                <div class="tax-decimal">
+                    <p>0.12</p>
+                    <p>0.07</p>
+                    <p>0.062</p>
+                    <p>0.0145</p>
+                    <p>0.01</p>
+                    <p>0.05</p>
+                </div>
+                <div class="tax-output">
+                    <p class="empty">1</p>
+                    <p class="empty">2</p>
+                    <p class="empty">3</p>
+                    <p class="empty">4</p>
+                    <p class="empty">5</p>
+                    <p class="empty">6</p>
+                    <p class="empty">180</p>
+                </div>
+            </div>
+            <hr>
+            <div class="tax-total-flex">
+                <p class="total-deductions">Total Deductions</p>
+                <p class="empty">10</p>
+            </div>
+        </div>
+   </section>
 
-//    });
+   <section class="net-monthly">
+    <h4>Net Monthly Income</h4>
+    <p class="take-home">(Your take home pay)</p>
+   </section>
+   <footer>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Visai</h1>
+            </a>
+        </div>
+            <ul class="nav-selection">
+                <li class="nav-items">
+                    <a href="">
+                        <h2>
+                            Home
+                        </h2>
+                    </a>
+                </li>
+                <li class="nav-items">
+                    <a href="">
+                        <h2>
+                            Net Monthly Income
+                        </h2>
+                    </a>
+                </li>
+                <li class="nav-items">
+                    <a href="">
+                        <h2>
+                            Balance a Checkbook/Check Register
+                        </h2>
+                    </a>
+                </li>
+            </ul>
+    </div>
+    <p>Email: Ilene.vuong@student.cart.org</p>
+    <p>Phone Number: 559-248-7400</p>
+    <p>Fax: 559-248-7423</p>
+    <p>Address: 2555 Clovis Avenue Clovis, CA, 93612</p>
+</footer>
 
-//    function filter() {
-//     for (var i = 0; i < data[0].length; i++)
-//         if (data)
-//    }
-
-//    console.log(data[0]);
-    </script>
+    <script src="java.js"></script>
 </body>
 </html>

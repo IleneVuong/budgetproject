@@ -243,6 +243,7 @@ let income = [
 var filteredIncome = [];
 var a = [];
 var gmi = [];
+// var input = document.getElementsByClassName.innerHTML('careerInput');
 function filter(input) {
     for (var i = 0; i < careers.length; i++) {
         if (careers[i] == input) {
