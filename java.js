@@ -292,6 +292,10 @@ function housePayment() {
     return mmhp;
 }
 
+let d = document.getElementById("temp");
+d.addEventListener('change', reset);
 function reset() {
-    
+    mmhp=;
+    document.getElementById("paymentNumber").innerHTML = mmhp;
+    return mmhp;
 }
