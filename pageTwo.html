@@ -47,12 +47,82 @@
             <p>Choose A Career Option</p>
             <!-- <ul class="selectdropdown" id="myList"></ul>-->
             <form class="career">
-                <input type="text" placeholder="Retail etc.">
+                <select class="careerInput">
+                    <option>Accontant</option>
+                    <option>Advance Tractor/Trailer Driver</option>
+                    <option>Agricultural Engineer</option>
+                    <option>Architect</option>
+                    <option>Auto Tech/Mechanic</option>
+                    <option>Aviation Tech. Mechanic</option>
+                    <option>Biologist</option>
+                    <option>Bus Driver</option>
+                    <option>Business Development Officer</option>
+                    <option>Business Manager (Hotel, etc.)</option>
+                    <option>CNC Manufacturingz</option>
+                    <option>Carpenterz</option>
+                    <option>Chef</option>
+                    <option>Chemist</option>
+                    <option>Civil Engineering Technician</option>
+                    <option>Commercial Driver</option>
+                    <option>Computer Technician</option>
+                    <option>Conserv./Environ. Science</option>
+                    <option>Correctional Officer</option>
+                    <option>Cosmetologist</option>
+                    <option>Credit Union/Bank Manager</option>
+                    <option>Daycare Director</option>
+                    <option>Dentist</option>
+                    <option>Detective</option>
+                    <option>Diesel Tech/Mechanic</option>
+                    <option>Doctor/Physician</option>
+                    <option>Electrician</option>
+                    <option>Electronic Engineer</option>
+                    <option>EMT</option>
+                    <option>Energy Management PG&E</option>
+                    <option>Engineer</option>
+                    <option>Fashion Designer</option>
+                    <option>Fire Fighter</option>
+                    <option>Forest Ranger</option>
+                    <option>Graphic/Media Designer</option>
+                    <option>H/C HVAC</option>
+                    <option>Highway Patrol</option>
+                    <option>Home Inspector</option>
+                    <option>Industrial Mechanic</option>
+                    <option>Interior Designer</option>
+                    <option>Investment Analyst</option>
+                    <option>Lab Technician</option>
+                    <option>Landscaper Horticulture</option>
+                    <option>Lawyer</option>
+                    <option>Marketing/Sales Manager</option>
+                    <option>Media/Communications</option>
+                    <option>Medical Repair Tech.</option>
+                    <option>Military</option>
+                    <option>Nurse</option>
+                    <option>Nutritionist</option>
+                    <option>Oceanographer</option>
+                    <option>Pastor</option>
+                    <option>PG&E/AT&T Technician</option>
+                    <option>Pharmacist</option>
+                    <option>Photographer</option>
+                    <option>Physical Therapist</option>
+                    <option>Pilot (Commercial)</option>
+                    <option>Plumber</option>
+                    <option>Police Officer</option>
+                    <option>Principal</option>
+                    <option>Probation Officer</option>
+                    <option>Psychologist</option>
+                    <option>Retail Sales Associate</option>
+                    <option>Social Worker</option>
+                    <option>Solar Energy Tech.</option>
+                    <option>Teacher</option>
+                    <option>UPS/Fed Ex Driver</option>
+                    <option>Veterinarian</option>
+                    <option>Welder/Metal Specialist</option>
+                    <option>Wind Energy Technician</option>
+                </select>
             </form>
             <p>Gross Annual Income</p>
-            <form class="gai">
-                <output type="number"></output>
-            </form>
+            <p class="GaiOutput"></p>
+            <button onclick="divideBy12()" id="calculateGmi">Calculate</button>
         </div>
     </section>
 
@@ -64,88 +134,90 @@
         <button>Calculate</button>
     </div>
 
-    <script>
-        let data = [
-    [ 'Accountant', 55650 ],
-    [ 'Advance Tractor/Trailer Driver', 53550 ],
-    [ 'Agricultural Engineer', 56700 ],
-    [ 'Architect', 53550 ],
-    [ 'Auto Tech/Mechanic', 49350 ],
-    [ 'Aviation Tech. Mechanic', 50400 ],
-    [ 'Biologist', 54600 ],
-    [ 'Bus Driver', 37800 ],
-    [ 'Business Development Officer', 54600 ],
-    [ 'Business Manager Hotel etc.', 61950 ],
-    [ 'CNC Manufacturing', 80850 ],
-    [ 'Carpenter', 47250 ],
-    [ 'Chef', 52500 ],
-    [ 'Chemist', 56700 ],
-    [ 'Civil Engineering Technician', 68250 ],
-    [ 'Commercial Driver', 51450 ],
-    [ 'ComputerTechnician', 46200 ],
-    [ 'Conserv./Environ. Science', 72450 ],
-    [ 'Correctional Officer', 48300 ],
-    [ 'Cosmetologist', 36750 ],
-    [ 'Credit Union/Bank Manager', 61950 ],
-    [ 'Daycare Director', 37800 ],
-    [ 'Dentist', 115500 ],
-    [ 'Detective', 60900 ],
-    [ 'Diesel Tech/Mechanic', 55650 ],
-    [ 'Doctor/Physician', 147000 ],
-    [ 'Electrician', 54600 ],
-    [ 'Electronic Engineer', 75600 ],
-    [ 'EMT', 34650 ],
-    [ 'Energy Management PG&E', 106050 ],
-    [ 'Engineer', 72450 ],
-    [ 'Fashion Designer', 63000 ],
-    [ 'Fire Fighter', 49350 ],
-    [ 'Forest Ranger', 52500 ],
-    [ 'Graphic/Media Designer', 58800 ],
-    [ 'H/C HVAC', 63000 ],
-    [ 'Highway Patrol', 84000 ],
-    [ 'Home Inspector', 56700 ],
-    [ 'Industrial Mechanic', 46200 ],
-    [ 'Interior Designer', 49350 ],
-    [ 'Investment Analyst', 66150 ],
-    [ 'Lab Technician', 42000 ],
-    [ 'Landscaper Horticulture', 48300 ],
-    [ 'lawyer', 86100 ],
-    [ 'Marketing/Sales Manager', 58800 ],
-    [ 'Media/Communications', 45150 ],
-    [ 'Medical RepairTech.', 52500 ],
-    [ 'Military', 55650 ],
-    [ 'Nuse', 66150 ],
-    [ 'Nutitionist', 45150 ],
-    [ 'Oceanographer', 69300 ],
-    [ 'Pastor', 50400 ],
-    [ 'PGBEATT Technician', 78750 ],
-    [ 'Pharmacist', 105000 ],
-    [ 'Photographer', 45150 ],
-    [ 'Physical Therapist', 72450 ],
-    [ 'Pilot Commercial', 78750 ],
-    [ 'Plumber', 52500 ],
-    [ 'Police Officer', 53550 ],
-    [ 'Principal', 93450 ],
-    [ 'Probation Officer', 44100 ],
-    [ 'Psychologist', 77700 ],
-    [ 'Retail Sales Associate', 34650 ],
-    [ 'Social Worker', 50400 ],
-    [ 'Solar Energy Tech.', 53550 ],
-    [ 'Teacher', 52500 ],
-    [ 'UPS/Fed Ex Driver', 68250 ],
-    [ 'Veterinarian', 82950 ],
-    [ 'Welder/Metal Specialist', 47250 ],
-    [ 'Wind EnergyTechnician', 56700 ]
-]
-    // let list = document.getElementById("myList");
-    // data.forEach((item)=>{
-    //     let li = document.createElement("li");
-    //     li.innerText = item[0];
-    //     list.appendChild(li);
-    // })
+    <script src="java.js">
+//         let data = [
+//     [ 'Accountant', 55650 ],
+//     [ 'Advance Tractor/Trailer Driver', 53550 ],
+//     [ 'Agricultural Engineer', 56700 ],
+//     [ 'Architect', 53550 ],
+//     [ 'Auto Tech/Mechanic', 49350 ],
+//     [ 'Aviation Tech. Mechanic', 50400 ],
+//     [ 'Biologist', 54600 ],
+//     [ 'Bus Driver', 37800 ],
+//     [ 'Business Development Officer', 54600 ],
+//     [ 'Business Manager Hotel etc.', 61950 ],
+//     [ 'CNC Manufacturing', 80850 ],
+//     [ 'Carpenter', 47250 ],
+//     [ 'Chef', 52500 ],
+//     [ 'Chemist', 56700 ],
+//     [ 'Civil Engineering Technician', 68250 ],
+//     [ 'Commercial Driver', 51450 ],
+//     [ 'ComputerTechnician', 46200 ],
+//     [ 'Conserv./Environ. Science', 72450 ],
+//     [ 'Correctional Officer', 48300 ],
+//     [ 'Cosmetologist', 36750 ],
+//     [ 'Credit Union/Bank Manager', 61950 ],
+//     [ 'Daycare Director', 37800 ],
+//     [ 'Dentist', 115500 ],
+//     [ 'Detective', 60900 ],
+//     [ 'Diesel Tech/Mechanic', 55650 ],
+//     [ 'Doctor/Physician', 147000 ],
+//     [ 'Electrician', 54600 ],
+//     [ 'Electronic Engineer', 75600 ],
+//     [ 'EMT', 34650 ],
+//     [ 'Energy Management PG&E', 106050 ],
+//     [ 'Engineer', 72450 ],
+//     [ 'Fashion Designer', 63000 ],
+//     [ 'Fire Fighter', 49350 ],
+//     [ 'Forest Ranger', 52500 ],
+//     [ 'Graphic/Media Designer', 58800 ],
+//     [ 'H/C HVAC', 63000 ],
+//     [ 'Highway Patrol', 84000 ],
+//     [ 'Home Inspector', 56700 ],
+//     [ 'Industrial Mechanic', 46200 ],
+//     [ 'Interior Designer', 49350 ],
+//     [ 'Investment Analyst', 66150 ],
+//     [ 'Lab Technician', 42000 ],
+//     [ 'Landscaper Horticulture', 48300 ],
+//     [ 'lawyer', 86100 ],
+//     [ 'Marketing/Sales Manager', 58800 ],
+//     [ 'Media/Communications', 45150 ],
+//     [ 'Medical RepairTech.', 52500 ],
+//     [ 'Military', 55650 ],
+//     [ 'Nuse', 66150 ],
+//     [ 'Nutitionist', 45150 ],
+//     [ 'Oceanographer', 69300 ],
+//     [ 'Pastor', 50400 ],
+//     [ 'PGBEATT Technician', 78750 ],
+//     [ 'Pharmacist', 105000 ],
+//     [ 'Photographer', 45150 ],
+//     [ 'Physical Therapist', 72450 ],
+//     [ 'Pilot Commercial', 78750 ],
+//     [ 'Plumber', 52500 ],
+//     [ 'Police Officer', 53550 ],
+//     [ 'Principal', 93450 ],
+//     [ 'Probation Officer', 44100 ],
+//     [ 'Psychologist', 77700 ],
+//     [ 'Retail Sales Associate', 34650 ],
+//     [ 'Social Worker', 50400 ],
+//     [ 'Solar Energy Tech.', 53550 ],
+//     [ 'Teacher', 52500 ],
+//     [ 'UPS/Fed Ex Driver', 68250 ],
+//     [ 'Veterinarian', 82950 ],
+//     [ 'Welder/Metal Specialist', 47250 ],
+//     [ 'Wind EnergyTechnician', 56700 ]
+// ]
+    
+//    onEvent(getElementById("calculateGmi"), "click", function divideBy12() {
 
+//    });
 
-   
+//    function filter() {
+//     for (var i = 0; i < data[0].length; i++)
+//         if (data)
+//    }
+
+//    console.log(data[0]);
     </script>
 </body>
 </html>
