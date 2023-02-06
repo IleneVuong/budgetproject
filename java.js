@@ -42,12 +42,12 @@ let data = [
     [ 'Investment Analyst', 66150 ],
     [ 'Lab Technician', 42000 ],
     [ 'Landscaper Horticulture', 48300 ],
-    [ 'lawyer', 86100 ],
+    [ 'awyer', 86100 ],
     [ 'Marketing/Sales Manager', 58800 ],
     [ 'Media/Communications', 45150 ],
-    [ 'Medical RepairTech.', 52500 ],
+    [ 'Medical Repair Tech.', 52500 ],
     [ 'Military', 55650 ],
-    [ 'Nuse', 66150 ],
+    [ 'Nurse', 66150 ],
     [ 'Nutitionist', 45150 ],
     [ 'Oceanographer', 69300 ],
     [ 'Pastor', 50400 ],
@@ -71,192 +71,200 @@ let data = [
     [ 'Wind EnergyTechnician', 56700 ]
 ]
     
-//    onEvent(getElementById("calculateGmi"), "click", function divideBy12() {
+// let careers = 
+//     ['Accountant',
+//      'Advance Tractor/Trailer Driver',
+//      'Agricultural Engineer',
+//      'Architect',
+//      'Auto Tech/Mechanic', 
+//      'Aviation Tech. Mechanic', 
+//      'Biologist', 
+//      'Bus Driver',
+//      'Business Development Officer',
+//      'Business Manager Hotel etc.', 
+//      'CNC Manufacturing', 
+//      'Carpenter', 
+//      'Chef',
+//      'Chemist',
+//      'Civil Engineering Technician', 
+//      'Commercial Driver', 
+//      'ComputerTechnician', 
+//      'Conserv./Environ. Science',
+//      'Correctional Officer', 
+//      'Cosmetologist', 
+//      'Credit Union/Bank Manager', 
+//      'Daycare Director', 
+//      'Dentist', 
+//      'Detective',
+//      'Diesel Tech/Mechanic', 
+//      'Doctor/Physician',
+//      'Electrician', 
+//      'Electronic Engineer', 
+//      'EMT', 
+//      'Energy Management PG&E', 
+//      'Engineer', 
+//      'Fashion Designer', 
+//      'Fire Fighter',
+//      'Forest Ranger', 
+//      'Graphic/Media Designer', 
+//      'H/C HVAC', 
+//      'Highway Patrol', 
+//      'Home Inspector', 
+//      'Industrial Mechanic', 
+//      'Interior Designer', 
+//      'Investment Analyst', 
+//      'Lab Technician', 
+//      'Landscaper Horticulture',
+//      'Lawyer', 
+//      'Marketing/Sales Manager',
+//      'Media/Communications', 
+//      'Medical RepairTech.',
+//      'Military', 
+//      'Nurse', 
+//      'Nutitionist', 
+//      'Oceanographer', 
+//      'Pastor', 
+//      'PGBEATT Technician',
+//      'Pharmacist', 
+//      'Photographer', 
+//      'Physical Therapist', 
+//      'Pilot Commercial',  
+//      'Plumber', 
+//      'Police Officer', 
+//      'Principal', 
+//      'Probation Officer', 
+//      'Psychologist', 
+//      'Retail Sales Associate', 
+//      'Social Worker', 
+//      'Solar Energy Tech.', 
+//      'Teacher',
+//      'UPS/Fed Ex Driver', 
+//      'Veterinarian',
+//      'Welder/Metal Specialist',
+//      'Wind EnergyTechnician'
+// ];
 
-//    });
+// let income = [
+//     55650,
+//     53550,
+//     56700,
+//     53550, 
+//     49350,
+//     50400,
+//     54600,
+//     37800,
+//     54600,
+//     61950,
+//     80850,
+//     47250,
+//     52500,
+//     56700,
+//     68250,
+//     51450,
+//     46200,
+//     72450,
+//     48300,
+//     36750,
+//     61950,
+//     37800,
+//     115500,
+//     60900, 
+//     55650, 
+//     147000,
+//     54600,
+//     75600,
+//     34650,
+//     106050,
+//     72450,
+//     63000,
+//     49350,
+//     52500,
+//     58800,
+//     63000,
+//     84000,
+//     56700,
+//     46200,
+//     49350,
+//     66150,
+//     42000,
+//     48300,
+//     86100,
+//     58800,
+//     45150,
+//     52500,
+//     55650,
+//     66150,
+//     45150,
+//     69300,
+//     50400,
+//     78750,
+//     105000,
+//     45150,
+//     72450,
+//     78750,
+//     52500,
+//     53550,
+//     93450,
+//     44100,
+//     77700,
+//     34650,
+//     50400,
+//     53550,
+//     52500,
+//     68250,
+//     82950,
+//     47250,
+//     56700 
+// ];
 
-//    function filter() {
-//     for (var i = 0; i < data[0].length; i++)
-//         if (data)
-//    }
+let e = document.getElementById('temp');
+    let grossAnnual = 0;
+    let career = e.options[e.selectedIndex].text;
+    e.addEventListener('change', setIncome);
 
-    
-//     function filter (career) {
-//         var filteredPrice;
-//         for (var i = 0; i < data.length; i++) {
-//             if (data[i[0]] == career) {
-//             appendItem(filteredPrice, data[i[1]]);
+    function setIncome(){
+        grossAnnual = e.value;
+        // document.getElementById("gr").innerHTML = filter(career);
+        document.getElementById("gr").innerHTML = grossAnnual;
+    }
+
+    for(job of data){
+        let newOption = document.createElement('option');
+        newOption.setAttribute('value', job[1]);
+        newOption.innerText = job[0];
+        e.appendChild(newOption)
+    }
+
+let filteredIncome = [];
+let a = [];
+// const gmi = [];
+let gmi =0;
+
+// function filter() {
+//     for (var i = 0; i < careers.length; i++) {
+//         if (careers[i] == career) {
+//             filteredIncome = income[i];
+//             return filteredIncome;
+//             // console.log(filteredIncome);
+//             // gmi = income[i]/12;
+//             // console.log(Math.round(gmi));
+//             // a = i;
+//             // console.log(a);
 //         }
-//         console.log(filteredPrice);
 //     }
 // }
-// filter("Architect");
-//    console.log(data[0]);
 
+let g = document.getElementById("temp");
+g.addEventListener('change', divide);
 
-let careers = 
-    ['Accountant',
-     'Advance Tractor/Trailer Driver',
-     'Agricultural Engineer',
-     'Architect',
-     'Auto Tech/Mechanic', 
-     'Aviation Tech. Mechanic', 
-     'Biologist', 
-     'Bus Driver',
-     'Business Development Officer',
-     'Business Manager Hotel etc.', 
-     'CNC Manufacturing', 
-     'Carpenter', 
-     'Chef',
-     'Chemist',
-     'Civil Engineering Technician', 
-     'Commercial Driver', 
-     'ComputerTechnician', 
-     'Conserv./Environ. Science',
-     'Correctional Officer', 
-     'Cosmetologist', 
-     'Credit Union/Bank Manager', 
-     'Daycare Director', 
-     'Dentist', 
-     'Detective',
-     'Diesel Tech/Mechanic', 
-     'Doctor/Physician',
-     'Electrician', 
-     'Electronic Engineer', 
-     'EMT', 
-     'Energy Management PG&E', 
-     'Engineer', 
-     'Fashion Designer', 
-     'Fire Fighter',
-     'Forest Ranger', 
-     'Graphic/Media Designer', 
-     'H/C HVAC', 
-     'Highway Patrol', 
-     'Home Inspector', 
-     'Industrial Mechanic', 
-     'Interior Designer', 
-     'Investment Analyst', 
-     'Lab Technician', 
-     'Landscaper Horticulture',
-     'Lawyer', 
-     'Marketing/Sales Manager',
-     'Media/Communications', 
-     'Medical RepairTech.',
-     'Military', 
-     'Nurse', 
-     'Nutitionist', 
-     'Oceanographer', 
-     'Pastor', 
-     'PGBEATT Technician',
-     'Pharmacist', 
-     'Photographer', 
-     'Physical Therapist', 
-     'Pilot Commercial',  
-     'Plumber', 
-     'Police Officer', 
-     'Principal', 
-     'Probation Officer', 
-     'Psychologist', 
-     'Retail Sales Associate', 
-     'Social Worker', 
-     'Solar Energy Tech.', 
-     'Teacher',
-     'UPS/Fed Ex Driver', 
-     'Veterinarian',
-     'Welder/Metal Specialist',
-     'Wind EnergyTechnician'
-];
-
-let income = [
-    55650,
-    53550,
-    56700,
-    53550, 
-    49350,
-    50400,
-    54600,
-    37800,
-    54600,
-    61950,
-    80850,
-    47250,
-    52500,
-    56700,
-    68250,
-    51450,
-    46200,
-    72450,
-    48300,
-    36750,
-    61950,
-    37800,
-    115500,
-    60900, 
-    55650, 
-    147000,
-    54600,
-    75600,
-    34650,
-    106050,
-    72450,
-    63000,
-    49350,
-    52500,
-    58800,
-    63000,
-    84000,
-    56700,
-    46200,
-    49350,
-    66150,
-    42000,
-    48300,
-    86100,
-    58800,
-    45150,
-    52500,
-    55650,
-    66150,
-    45150,
-    69300,
-    50400,
-    78750,
-    105000,
-    45150,
-    72450,
-    78750,
-    52500,
-    53550,
-    93450,
-    44100,
-    77700,
-    34650,
-    50400,
-    53550,
-    52500,
-    68250,
-    82950,
-    47250,
-    56700 
-];
-
-var filteredIncome = [];
-var a = [];
-var gmi = [];
-// var input = document.getElementsByClassName.innerHTML('careerInput');
-function filter(input) {
-    for (var i = 0; i < careers.length; i++) {
-        if (careers[i] == input) {
-            filteredIncome = income[i];
-            console.log(filteredIncome);
-            gmi = income[i]/12;
-            console.log(Math.round(gmi));
-            a = i;
-            console.log(a);
-        }
-    }
+function divide() {
+    gmi = Math.round(grossAnnual/12);
+    document.getElementById("monthly").innerHTML = gmi;
+    return gmi;
 }
-filter ("Psychologist");
+
+
+
 
 
 function taxes() {
@@ -274,8 +282,16 @@ function taxes() {
 }
 taxes();
 
+let mmhp = 0;
+let t = document.getElementById("houseButton");
+t.addEventListener('click', housePayment);
+
 function housePayment() {
     mmhp = Math.round(gmi * 0.33);
-    console.log(mmhp);
+    document.getElementById("paymentNumber").innerHTML = mmhp;
+    return mmhp;
 }
-housePayment();
+
+function reset() {
+    
+}

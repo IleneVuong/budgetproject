@@ -157,6 +157,7 @@ footer {
     padding: 0 8vw;
     text-align:center;
     font-size:2.5vw;
+    margin-top:3vw;
 }
 
 .dollar {
@@ -236,6 +237,8 @@ footer {
 .mountain-img {
     background-image:url("img/mountain.png");
     padding-bottom:3vw;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .taxes {
@@ -304,8 +307,12 @@ footer {
 }
 
 .take-home {
-    font-size:2.5vw;
+    font-size:2vw;
     padding-top:.5vw;
+}
+
+::selection {
+    background:#8ec2a4c0;
 }
 
 .net-monthly h4 {
@@ -316,6 +323,5 @@ footer p {
     color:#004643;
     margin-left:1vw;
     padding: 1vw 0;
-    
 }
 
