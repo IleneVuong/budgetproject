@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero-img">
+    <div class="hero-img hero-img2">
         <div class="nav-bar">
             <div class="logo">
                 <a href="index.html">
@@ -42,87 +42,98 @@
     </div>
 <!-- Calculate Your Net Monthly Income - Section1 -->
     <section class="nm-sec gradient" id="section-net-monthly">
-        <h3>Calculate Your Net Monthly Income</h3>
-        <div>
-            <p>Choose A Career Option</p>
-            <!-- <ul class="selectdropdown" id="myList"></ul>-->
-            <form class="career">
-                <select class="careerInput">
-                    <option>Accontant</option>
-                    <option>Advance Tractor/Trailer Driver</option>
-                    <option>Agricultural Engineer</option>
-                    <option>Architect</option>
-                    <option>Auto Tech/Mechanic</option>
-                    <option>Aviation Tech. Mechanic</option>
-                    <option>Biologist</option>
-                    <option>Bus Driver</option>
-                    <option>Business Development Officer</option>
-                    <option>Business Manager (Hotel, etc.)</option>
-                    <option>CNC Manufacturingz</option>
-                    <option>Carpenterz</option>
-                    <option>Chef</option>
-                    <option>Chemist</option>
-                    <option>Civil Engineering Technician</option>
-                    <option>Commercial Driver</option>
-                    <option>Computer Technician</option>
-                    <option>Conserv./Environ. Science</option>
-                    <option>Correctional Officer</option>
-                    <option>Cosmetologist</option>
-                    <option>Credit Union/Bank Manager</option>
-                    <option>Daycare Director</option>
-                    <option>Dentist</option>
-                    <option>Detective</option>
-                    <option>Diesel Tech/Mechanic</option>
-                    <option>Doctor/Physician</option>
-                    <option>Electrician</option>
-                    <option>Electronic Engineer</option>
-                    <option>EMT</option>
-                    <option>Energy Management PG&E</option>
-                    <option>Engineer</option>
-                    <option>Fashion Designer</option>
-                    <option>Fire Fighter</option>
-                    <option>Forest Ranger</option>
-                    <option>Graphic/Media Designer</option>
-                    <option>H/C HVAC</option>
-                    <option>Highway Patrol</option>
-                    <option>Home Inspector</option>
-                    <option>Industrial Mechanic</option>
-                    <option>Interior Designer</option>
-                    <option>Investment Analyst</option>
-                    <option>Lab Technician</option>
-                    <option>Landscaper Horticulture</option>
-                    <option>Lawyer</option>
-                    <option>Marketing/Sales Manager</option>
-                    <option>Media/Communications</option>
-                    <option>Medical Repair Tech.</option>
-                    <option>Military</option>
-                    <option>Nurse</option>
-                    <option>Nutritionist</option>
-                    <option>Oceanographer</option>
-                    <option>Pastor</option>
-                    <option>PG&E/AT&T Technician</option>
-                    <option>Pharmacist</option>
-                    <option>Photographer</option>
-                    <option>Physical Therapist</option>
-                    <option>Pilot (Commercial)</option>
-                    <option>Plumber</option>
-                    <option>Police Officer</option>
-                    <option>Principal</option>
-                    <option>Probation Officer</option>
-                    <option>Psychologist</option>
-                    <option>Retail Sales Associate</option>
-                    <option>Social Worker</option>
-                    <option>Solar Energy Tech.</option>
-                    <option>Teacher</option>
-                    <option>UPS/Fed Ex Driver</option>
-                    <option>Veterinarian</option>
-                    <option>Welder/Metal Specialist</option>
-                    <option>Wind Energy Technician</option>
-                </select>
-            </form>
-            <p>Gross Annual Income</p>
-            <p class="GaiOutput"></p>
-            <button onclick="divideBy12()" id="calculateGmi">Calculate</button>
+        <h3 class="sect1-head">Calculate Your Net Monthly Income</h3>
+        <div class="sect1-content">
+            <div class="career-flex"> 
+                <p>Choose A Career Option</p>
+                <form class="career">
+                        <select class="career-input">
+                        <option>Accontant</option>
+                        <option>Advance Tractor/Trailer Driver</option>
+                        <option>Agricultural Engineer</option>
+                        <option>Architect</option>
+                        <option>Auto Tech/Mechanic</option>
+                        <option>Aviation Tech. Mechanic</option>
+                        <option>Biologist</option>
+                        <option>Bus Driver</option>
+                        <option>Business Development Officer</option>
+                        <option>Business Manager (Hotel, etc.)</option>
+                        <option>CNC Manufacturing</option>
+                        <option>Carpenter</option>
+                        <option>Chef</option>
+                        <option>Chemist</option>
+                        <option>Civil Engineering Technician</option>
+                        <option>Commercial Driver</option>
+                        <option>Computer Technician</option>
+                        <option>Conserv./Environ. Science</option>
+                        <option>Correctional Officer</option>
+                        <option>Cosmetologist</option>
+                        <option>Credit Union/Bank Manager</option>
+                        <option>Daycare Director</option>
+                        <option>Dentist</option>
+                        <option>Detective</option>
+                        <option>Diesel Tech/Mechanic</option>
+                        <option>Doctor/Physician</option>
+                        <option>Electrician</option>
+                        <option>Electronic Engineer</option>
+                        <option>EMT</option>
+                        <option>Energy Management PG&E</option>
+                        <option>Engineer</option>
+                        <option>Fashion Designer</option>
+                        <option>Fire Fighter</option>
+                        <option>Forest Ranger</option>
+                        <option>Graphic/Media Designer</option>
+                        <option>H/C HVAC</option>
+                        <option>Highway Patrol</option>
+                        <option>Home Inspector</option>
+                        <option>Industrial Mechanic</option>
+                        <option>Interior Designer</option>
+                        <option>Investment Analyst</option>
+                        <option>Lab Technician</option>
+                        <option>Landscaper Horticulture</option>
+                        <option>Lawyer</option>
+                        <option>Marketing/Sales Manager</option>
+                        <option>Media/Communications</option>
+                        <option>Medical Repair Tech.</option>
+                        <option>Military</option>
+                        <option>Nurse</option>
+                        <option>Nutritionist</option>
+                        <option>Oceanographer</option>
+                        <option>Pastor</option>
+                        <option>PG&E/AT&T Technician</option>
+                        <option>Pharmacist</option>
+                        <option>Photographer</option>
+                        <option>Physical Therapist</option>
+                        <option>Pilot (Commercial)</option>
+                        <option>Plumber</option>
+                        <option>Police Officer</option>
+                        <option>Principal</option>
+                        <option>Probation Officer</option>
+                        <option>Psychologist</option>
+                        <option>Retail Sales Associate</option>
+                        <option>Social Worker</option>
+                        <option>Solar Energy Tech.</option>
+                        <option>Teacher</option>
+                        <option>UPS/Fed Ex Driver</option>
+                        <option>Veterinarian</option>
+                        <option>Welder/Metal Specialist</option>
+                        <option>Wind Energy Technician</option>
+                    </select>
+                </form>  
+            </div>
+            <div class="income-flex">
+                <p>Gross Annual Income</p>
+                <output><p class="gross-annual"></p></output>      
+            </div>
+        </div>
+        <button onclick="filter()" id="calculateGmi">Calculate</button>
+        <div class="gross-monthly">
+            <h4>Gross Monthly Income</h4>
+            <div class="flex">
+                <p class="dollar">$</p>
+                <p class="monthly-number"></p>
+            </div>
+            
         </div>
     </section>
 

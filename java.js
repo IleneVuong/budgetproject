@@ -269,6 +269,7 @@ function taxes() {
     td = ft + st + ss + mc + sd + ri + mi;
     nmi = gmi - td;
     console.log(ft, st, ss, mc, sd, ri, mi, td, nmi);
+    return(nmi);
 }
 taxes();
 
@@ -277,4 +278,3 @@ function housePayment() {
     console.log(mmhp);
 }
 housePayment();
-

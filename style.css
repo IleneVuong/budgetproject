@@ -12,6 +12,10 @@
     background-position-y: center;
 }
 
+.hero-img2 {
+    background-image:url("img/taxes.png");
+}
+
 a {
     text-decoration: none;
 }
@@ -93,3 +97,84 @@ footer {
     background: linear-gradient(17deg, rgba(98,194,141,1) 2%, rgba(173,230,193,1) 37%, rgba(236,232,210,1) 65%, rgba(251,229,218,1) 81%);
 }
 
+.gross-annual {
+    background:#8980F5;
+    padding:1.5vw;
+}
+
+.sect1-content {
+    display:flex;
+    flex:wrap;
+    padding: 0 8vw;
+    justify-content:space-between;
+}
+
+.income-flex,
+.career-flex {
+    width:25vw;
+}
+
+#section-net-monthly {
+    margin: 4vw 15vw;
+}
+
+.sect1-head {
+    text-align: center;
+    padding-top:3vw;
+    padding-bottom:3vw;
+}
+
+.sect1-content p {
+    text-align:center;
+    font-size:1.5vw;
+}
+
+.career-input {
+    width:100%;
+    height:3vw;
+    padding:0 1vw;
+    font-size:1.2vw;
+    font-family:"League Spartan", sans-serif;
+}
+
+#calculateGmi {
+    margin: 2vw 0 2vw 53vw;
+    padding: .5vw 1.5vw;
+    background-color:#a1d2b64b;
+    border: #8ec2a4 solid .15vw;
+    border-radius:2vw;
+    font-family:"League Spartan", sans-serif;
+    font-size:1.2vw;
+}
+
+#calculateGmi:hover {
+    background-color:#fffefe91;
+}
+
+.gross-monthly {
+    font-family:"League Spartan", sans-serif;
+    padding: 0 8vw;
+    text-align:center;
+    font-size:2.5vw;
+}
+
+.dollar {
+    font-family:"League Spartan", sans-serif;
+    font-weight:600;
+    font-size:3vw;
+    color:#8980F5;
+    padding-right:1vw;
+}
+
+.flex {
+    display:flex;
+    flex:wrap;
+    justify-content: center;
+    padding-bottom:3vw;
+    padding-top:1vw;
+}
+
+.monthly-number {
+    background:#8980F5;
+    padding:1.5vw 6vw;
+}
