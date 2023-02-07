@@ -115,27 +115,60 @@
                     <p>0.01</p>
                     <p>0.05</p>
                 </div>
-                <div class="tax-output">
-                    <p class="empty">1</p>
-                    <p class="empty">2</p>
-                    <p class="empty">3</p>
-                    <p class="empty">4</p>
-                    <p class="empty">5</p>
-                    <p class="empty">6</p>
-                    <p class="empty">180</p>
+                <div class="tax-equal">
+                    <p>=</p>
+                    <p>=</p>
+                    <p>=</p>
+                    <p>=</p>
+                    <p>=</p>
+                    <p>=</p>
+                    <p>=</p>
                 </div>
+                <div class="tax-output">
+                    <p id="ft-out"></p>
+                    <p id="st-out"></p>
+                    <p id="ss-out"></p>
+                    <p id="mc-out"></p>
+                    <p id="sd-out"></p>
+                    <p id="ri-out"></p>
+                    <p id="mi-out"></p>
+                </div> 
             </div>
             <hr>
             <div class="tax-total-flex">
                 <p class="total-deductions">Total Deductions</p>
-                <p class="empty">10</p>
+                <p id="td-out"></p>
             </div>
         </div>
    </section>
 
+
    <section class="net-monthly">
     <h4>Net Monthly Income</h4>
     <p class="take-home">(Your take home pay)</p>
+    <div class="subtract-sec">
+        <div class="sub-gmi">
+            <div class="sub-color">
+                <p id="gmi"></p>  
+              </div>
+            <p class="mono">Gross Monthly Income</p>
+        </div>
+        <p class="sub-sign minus">-</p>
+        <div class="sub-td">
+            <div class="sub-color">
+              <p id="td-out2"></p>  
+            </div>
+            <p class="mono">Total Deductions</p> 
+        </div>
+        <p class="sub-sign">=</p>
+        <div class="sub-nmi">
+            <div class="sub-color">
+                <p id="nmi-out"></p>  
+              </div>
+            <p class="mono">Net Monthly Income</p>
+        </div>
+        
+    </div>
    </section>
    <script src="./java.js"></script>
    <footer>

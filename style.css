@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=League+Spartan:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=League+Spartan:wght@300;400;500;700&family=Ubuntu+Mono&display=swap');
+
 * {
     margin:0;
     padding:0;
@@ -252,7 +253,9 @@ footer {
 .tax-percent p,
 .tax-x p,
 .tax-decimal p,
-.tax-total-flex p {
+.tax-total-flex p,
+.tax-equal p,
+.tax-output p {
     padding:1.5vw 0;
     font-size:1.9vw;
 }
@@ -264,6 +267,10 @@ footer {
 
 .tax-decimal p {
     padding-left:1vw;
+}
+
+.tax-equal p {
+    padding-left:5vw;
 }
 
 .tax-input {
@@ -317,6 +324,50 @@ footer {
 
 .net-monthly h4 {
     padding-top:2vw;
+}
+
+.subtract-sec {
+    display:flex;
+    flex:wrap;
+    margin:0 15vw;
+    justify-content: space-between;
+    margin-top:2vw;
+}
+
+.sub-sign {
+    font-size:8vw;
+    opacity:.8;
+    color:#EFEFEF;
+    top:-1.5vw;
+    position: relative;
+}
+
+.minus {
+    font-size:10vw;
+    top:-3vw;
+}
+
+.sub-color p {
+    width:15vw;
+    color:#EFEFEF;
+    text-align: center;
+    font-size:2vw;
+    vertical-align: middle;
+    display:inline-block;
+    line-height:1.5;
+}
+
+.sub-color {
+    background-color:rgb(180, 180, 180);
+    height:3vw;
+}
+
+.mono {
+    font-family:"Ubuntu Mono", sans-serif;
+    text-align: center;
+    color:#525252;
+    font-size:1.3vw;
+    padding-top:.5vw;
 }
 
 footer p {
