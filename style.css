@@ -7,7 +7,7 @@
 
 .hero-img {
     background-image:url("img/indexhero.png");
-    min-height:60vh;
+    min-height:35vw;
     background-repeat:no-repeat;
     background-size:cover;
     background-position-y: center;
@@ -97,6 +97,7 @@ footer {
 .net-monthly {
     background: rgb(98,194,141);
     background: linear-gradient(17deg, rgba(98,194,141,1) 2%, rgba(173,230,193,1) 37%, rgba(236,232,210,1) 65%, rgba(251,229,218,1) 81%);
+    margin-bottom:5vw;
 }
 
 .gross-annual {
@@ -116,7 +117,7 @@ footer {
     width:25vw;
 }
 
-#section-net-monthly {
+#section-gross-monthly {
     margin: 4vw 15vw;
 }
 
@@ -369,6 +370,19 @@ footer {
     font-size:1.3vw;
     padding-top:.5vw;
 }
+
+/* PAGE 3 */
+.hero-img3 {
+    background-image: url("img/president.png");
+}
+
+
+
+
+
+
+
+
 
 footer p {
     color:#004643;
