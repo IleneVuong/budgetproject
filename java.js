@@ -118,6 +118,7 @@ function taxes() {
     let mi = 180
     document.getElementById("mi-out").innerHTML = mi;
     let td = ft + st + ss + mc + sd + ri + mi;
+    document.getElementById("td-out").innerHTML = td;
     document.getElementById("td-out2").innerHTML = td;
     let nmi = gmi - td;
     document.getElementById("nmi-out").innerHTML = nmi; 

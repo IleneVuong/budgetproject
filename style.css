@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=League+Spartan:wght@300;400;500;700&family=Ubuntu+Mono&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=League+Spartan:wght@300;400;500;700&family=Ubuntu+Mono&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=League+Spartan:wght@300;400;500;700&family=Bad+Script&family=Ubuntu+Mono&display=swap');
+
 
 * {
     margin:0;
@@ -115,6 +118,10 @@ footer {
 .income-flex,
 .career-flex {
     width:25vw;
+}
+
+option {
+    font-size:1.5vw;
 }
 
 #section-gross-monthly {
@@ -376,12 +383,109 @@ footer {
     background-image: url("img/president.png");
 }
 
+.how-to-sect p,
+.how-to-sect li {
+    font-family: "League Spartan", sans-serif;
+    font-size:1.5vw;
+    line-height: 3vw;
+    margin-left:29vw;
+    font-weight:300;
+    margin-right:27vw;
+}
 
+.how-to-sect p {
+    margin-left:27.5vw;
+}
 
+.how-to-sect h3 {
+    padding-bottom:2vw;
+}
 
+.form-flex {
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    margin:0 15vw;
+    padding:5vw 0;
+}
 
+.check-reg {
+    background-color:#004643;
+    margin-bottom:5vw;
+}
 
+.check-reg h3 {
+    text-align: center;
+    padding-top:5vw;
+    background-color:white;
+}
 
+.key h4 {
+    font-family: "League Spartan", sans-serif;
+    font-size:3.5vw;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom:1.2vw;
+}
+
+.key {
+    color:#D9D9D9;
+}
+
+.key p {
+   font-size:1.5vw;
+   font-weight:300; 
+   line-height:2.5vw;
+}
+
+table {
+    background-image:url("img/leaves.png");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-collapse: collapse;
+}
+
+input,
+output,
+th,
+.paycheck {
+    height:2.5vw;
+    font-size:1.2vw;
+    font-family:"League Spartan", sans-serif;
+    background-color:#eaeaea3d;
+    border:none;
+}
+
+td, 
+th {
+    border:rgba(0, 0, 0, 0.705) solid .1vw;
+}
+
+input,
+output,
+.paycheck {
+    font-family:'Bad Script';
+    font-size:1.6vw;
+    text-align:center;
+}
+
+.date {
+    width:3vw;
+}
+
+.transaction {
+    width:15vw;
+}
+
+.withdrawal,
+.deposit {
+    width:10vw;
+}
+
+.balance {
+    width:10vw;
+}
 
 
 footer p {
