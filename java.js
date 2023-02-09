@@ -73,15 +73,15 @@ let data = [
     
 
 let e = document.getElementById('temp');
-let grossAnnual = 0;
-let gmi =0;
 let career = e.options[e.selectedIndex].text;
 e.addEventListener('change', setIncome);
+let grossAnnual = 0;
+let gmi =0;
+
     
 
 function setIncome(){
     grossAnnual = e.value;
-    // document.getElementById("gr").innerHTML = filter(career);
     document.getElementById("gr").innerHTML = grossAnnual;
 }
 
@@ -95,6 +95,7 @@ for(job of data){
 let g = document.getElementById("temp");
 g.addEventListener('change', divide);
 g.addEventListener('change', reset);
+g.addEventListener('change', taxes);
 let mmhp = 0;
 
 function divide() {
@@ -123,6 +124,8 @@ function taxes() {
     let nmi = gmi - td;
     document.getElementById("nmi-out").innerHTML = nmi; 
     document.getElementById("gmi").innerHTML = gmi; 
+    document.getElementById("balance").innerHTML = nmi;
+    document.getElementById("balance2").innerHTML = nmi;
 }
 
 let t = document.getElementById("houseButton");
@@ -139,4 +142,19 @@ function reset() {
     document.getElementById("paymentNumber").innerHTML = mmhp;
 }
 
-t.addEventListener("click",taxes);
+// let p = document.getElementById("calc");
+// p.addEventListener('click', add)
+// let changePlus = document.getElementById("plus2")
+// let newBalance = nmi;
+
+// function add() {
+//     newBalance = changePlus + newBalance;
+//     document.getElementById("balance2").innerHTML = newBalance;
+// }
+
+let b = document.getElementById("plus")
+function add () {
+    if ()
+}
+
+

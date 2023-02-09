@@ -68,56 +68,56 @@
         <table>
             <tr>
                 <th class="date">Date</th>
+                <th></th>
                 <th class="transaction">Transaction Description</th>
                 <th class="withdrawal">Payment Fee Withdrawal (-)</th>
                 <th class="deposit">Deposit Credit (+)</th>
                 <th class="balance">$ Balance</th>
             </tr>
             <tr>
-                <td><form><input class="date" type="text" placeholder="1/2"></form></td>
+                <td><form class="flex"><input class="date " type="text" maxlength="2"><p>/</p><input class="date" type="type" maxlength="2"></form></td>
                 <td class="paycheck">Paycheck</td>
-                <!-- <td><form><input class="transaction" type="text" value="Paycheck"></form></td> -->
                 <td><form><input class="withdrawal" type="text"></form></td>
                 <td><form><input class="deposit" type="text"></form></td>
-                <td><form><output class="balance" type="text"></form></td>
+                <td><form><output class="balance" id="balance" type="text"></form></td>
             </tr>
             <tr>
-                <td><form><input class="date" type="text" placeholder=""></form></td>
+                <td><form class="flex"><input class="date " type="text" maxlength="2"><p>/</p><input class="date" type="type" maxlength="2"></form></td>
                 <td><form><input class="transaction" type="text" placeholder=""></form></td>
                 <td><form><input class="withdrawal" type="text" placeholder=""></form></td>
                 <td><form><input class="deposit" type="text" placeholder=""></form></td>
                 <td><form><output class="balance" type="text" placeholder=""></form></td>
             </tr>
             <tr>
-                <td><form><input class="date" type="text" placeholder=""></form></td>
+                <td><form class="flex"><input class="date " type="text" maxlength="2"><p>/</p><input class="date" type="type" maxlength="2"></form></td>
                 <td><form><input class="transaction" type="text" placeholder=""></form></td>
                 <td><form><input class="withdrawal" type="text" placeholder=""></form></td>
                 <td><form><input class="deposit" type="text" placeholder=""></form></td>
                 <td><form><output class="balance" type="text" placeholder=""></form></td>
             </tr>
             <tr>
-                <td><form><input class="date" type="text" placeholder=""></form></td>
+                <td><form class="flex"><input class="date " type="text" maxlength="2"><p>/</p><input class="date" type="type" maxlength="2"></form></td>
                 <td><form><input class="transaction" type="text" placeholder=""></form></td>
                 <td><form><input class="withdrawal" type="text" placeholder=""></form></td>
                 <td><form><input class="deposit" type="text" placeholder=""></form></td>
                 <td><form><output class="balance" type="text" placeholder=""></form></td>
             </tr>
             <tr>
-                <td><form><input class="date" type="text" placeholder=""></form></td>
+                <td><form class="flex"><input class="date " type="text" maxlength="2"><p>/</p><input class="date" type="type" maxlength="2"></form></td>
                 <td><form><input class="transaction" type="text" placeholder=""></form></td>
                 <td><form><input class="withdrawal" type="text" placeholder=""></form></td>
                 <td><form><input class="deposit" type="text" placeholder=""></form></td>
                 <td><form><output class="balance" type="text" placeholder=""></form></td>
             </tr>
             <tr>
-                <td><form><input class="date" type="text" placeholder=""></form></td>
+                <td><form class="flex"><input class="date " type="text" maxlength="2"><p>/</p><input class="date" type="type" maxlength="2"></form></td>
                 <td><form><input class="transaction" type="text" placeholder=""></form></td>
                 <td><form><input class="withdrawal" type="text" placeholder=""></form></td>
                 <td><form><input class="deposit" type="text" placeholder=""></form></td>
                 <td><form><output class="balance" type="text" placeholder=""></form></td>
             </tr>
             <tr>
-                <td><form><input class="date" type="text" placeholder=""></form></td>
+                <td><form class="flex"><input class="date " type="text" maxlength="2"><p>/</p><input class="date" type="type" maxlength="2"></form></td>
                 <td><form><input class="transaction" type="text" placeholder=""></form></td>
                 <td><form><input class="withdrawal" type="text" placeholder=""></form></td>
                 <td><form><input class="deposit" type="text" placeholder=""></form></td>
@@ -126,6 +126,8 @@
         </table>
     </div>
 </section>
+
+<script src="./java.js"></script>
 
 <footer>
     <div class="nav-bar">
@@ -143,7 +145,7 @@
                     </a>
                 </li>
                 <li class="nav-items">
-                    <a href="">
+                    <a href="pageTwo.html">
                         <h2>
                             Net Monthly Income
                         </h2>

@@ -404,8 +404,8 @@ option {
 .form-flex {
     display: flex;
     flex: wrap;
-    justify-content: space-around;
-    margin:0 15vw;
+    justify-content: space-between;
+    margin:0 12vw;
     padding:5vw 0;
 }
 
@@ -471,7 +471,7 @@ output,
 }
 
 .date {
-    width:3vw;
+    width:10vw;
 }
 
 .transaction {
