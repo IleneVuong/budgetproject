@@ -447,7 +447,6 @@ table {
 }
 
 input,
-output,
 th,
 .paycheck {
     height:2.5vw;
@@ -455,6 +454,11 @@ th,
     font-family:"League Spartan", sans-serif;
     background-color:#eaeaea3d;
     border:none;
+}
+
+output {
+    font-size:1.2vw;
+    font-family:"League Spartan", sans-serif;
 }
 
 td, 
