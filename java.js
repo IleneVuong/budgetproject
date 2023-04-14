@@ -152,9 +152,5 @@ function reset() {
 //     document.getElementById("balance2").innerHTML = newBalance;
 // }
 
-let b = document.getElementById("plus")
-function add () {
-    if ()
-}
 
 
