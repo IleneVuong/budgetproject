@@ -99,8 +99,15 @@ g.addEventListener('change', taxes);
 let mmhp = 0;
 
 function divide() {
+    dollar = document.getElementById("dollar");
     gmi = Math.round(grossAnnual/12);
     document.getElementById("monthly").innerHTML = gmi;
+    document.getElementById("monthly").style.paddingTop = "1vw";
+    document.getElementById("monthly").style.paddingBottom = "1vw";
+    dollar.style.fontSize = "4vw";
+    dollar.style.position = "relative";
+    dollar.style.top = ".5vw";
+    
 }
 
 function taxes() {
@@ -142,19 +149,21 @@ function reset() {
     document.getElementById("paymentNumber").innerHTML = mmhp;
 }
 
-// let p = document.getElementById("calc");
-// p.addEventListener('click', add)
-// let changePlus = document.getElementById("plus2")
-// let newBalance = nmi;
+let calcBtn = document.getElementById("calc");
+calcBtn.addEventListener('click', test);
+let count;
+function checkbook() {
 
-// function add() {
-//     newBalance = changePlus + newBalance;
-//     document.getElementById("balance2").innerHTML = newBalance;
-// }
-
-let b = document.getElementById("plus")
-function add () {
-    if ()
 }
 
+newTotal = gmi;
+function test() {
+
+        count = count + 1
+        let add =  document.getElementById("plus1");
+        newTotal = add + newTotal;
+        document.getElementById("balance1").innerHTML = add;
+    
+    
+}
 
