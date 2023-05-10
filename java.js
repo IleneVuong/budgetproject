@@ -76,7 +76,7 @@ let e = document.getElementById('temp');
 let career = e.options[e.selectedIndex].text;
 e.addEventListener('change', setIncome);
 let grossAnnual = 0;
-let gmi =0;
+let gmi = 0;
 
     
 
@@ -97,6 +97,7 @@ g.addEventListener('change', divide);
 g.addEventListener('change', reset);
 g.addEventListener('change', taxes);
 let mmhp = 0;
+let nmi;
 
 function divide() {
     dollar = document.getElementById("dollar");
@@ -107,7 +108,6 @@ function divide() {
     dollar.style.fontSize = "4vw";
     dollar.style.position = "relative";
     dollar.style.top = ".5vw";
-    
 }
 
 function taxes() {
@@ -128,11 +128,12 @@ function taxes() {
     let td = ft + st + ss + mc + sd + ri + mi;
     document.getElementById("td-out").innerHTML = td;
     document.getElementById("td-out2").innerHTML = td;
-    let nmi = gmi - td;
+    nmi = gmi - td;
     document.getElementById("nmi-out").innerHTML = nmi; 
     document.getElementById("gmi").innerHTML = gmi; 
-    document.getElementById("balance").innerHTML = nmi;
-    document.getElementById("balance2").innerHTML = nmi;
+    document.getElementById("balance1").innerHTML = nmi;
+    document.getElementById("plus1").innerHTML = nmi;
+    document.getElementById("transaction1").innerHTML = "Paycheck";
 }
 
 let t = document.getElementById("houseButton");
@@ -150,20 +151,47 @@ function reset() {
 }
 
 let calcBtn = document.getElementById("calc");
+let calcBtn2 = document.getElementById("calc2");
+let counter = 2;
 calcBtn.addEventListener('click', test);
-let count;
-function checkbook() {
-
-}
-
-newTotal = gmi;
+calcBtn.addEventListener('click', test2);
 function test() {
+    if(counter == 2) {
+        let add = document.getElementById("plus2").value; 
+        document.getElementById("balance2").innerHTML = newTotal;
+        newTotal = parseInt(add) + parseInt(nmi);
 
-        count = count + 1
-        let add =  document.getElementById("plus1");
-        newTotal = add + newTotal;
-        document.getElementById("balance1").innerHTML = add;
-    
-    
+        document.getElementById("plus3").readOnly = false;
+        document.getElementById("transaction3").readOnly = false;
+        document.getElementById("withdrawal3").readOnly = false;
+        document.getElementById("date3").readOnly = false;
+         
+        document.getElementById("plus2").readOnly = true;
+        document.getElementById("transaction2").readOnly = true;
+        document.getElementById("withdrawal2").readOnly = true;
+        document.getElementById("date2").readOnly = true;
+        counter = counter + 1;
+    } else if(counter == 3) {
+        add = document.getElementById("plus3").value; 
+        newTotal = parseInt(add) + parseInt(nmi);
+        document.getElementById("balance3").innerHTML = newTotal;
+
+        document.getElementById("plus4").readOnly = false;
+        document.getElementById("transaction4").readOnly = false;
+        document.getElementById("withdrawal4").readOnly = false;
+        document.getElementById("date4").readOnly = false;
+         
+        document.getElementById("plus3").readOnly = true;
+        document.getElementById("transaction3").readOnly = true;
+        document.getElementById("withdrawal3").readOnly = true;
+        document.getElementById("date3").readOnly = true;
+        counter = counter + 1;
+    }
 }
+
+function test2() {
+
+}
+
+
 
