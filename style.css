@@ -186,8 +186,13 @@ option {
 }
 
 .monthly-number {
-    background:#8980F5;
+    background-color:#8980F5;
     padding:1.5vw 6vw;
+}
+
+.house-payment {
+    background-color:transparent;
+    padding:1.5vw 4vw;
 }
 
 .house-payment-sec {
@@ -491,6 +496,18 @@ output,
     width:10vw;
 }
 
+#calc,
+#calc2 {
+    width:6vw;
+    height:2.5vw;
+    font-family:"League Spartan", sans-serif;
+    position:relative;
+    float:right;
+    right:10vw;
+    bottom:4vw;
+    margin-right:2vw;
+    font-size:1.2vw;
+}
 
 footer p {
     color:#004643;
@@ -498,3 +515,25 @@ footer p {
     padding: 1vw 0;
 }
 
+.down-arrow {
+    margin-left:55vw;
+    position:relative;
+    bottom:1vw;
+    color:#525252;
+    text-decoration:none;
+}
+
+.down-arrow:hover {
+    color:#8980F5;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.s {
+    color:#8980F5;
+    font-weight:bold;
+}

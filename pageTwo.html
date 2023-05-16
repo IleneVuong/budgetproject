@@ -64,11 +64,11 @@
                 <p id="dollar" class="dollar">$</p>
                 <p class="monthly-number" id="monthly"></p>
             </div>
-            
+            <a href="#deductions" class="down-arrow">▼</a>
         </div>
     </section>
 
-   <section class="deductions">
+   <section id="deductions" class="deductions">
         <h3>Pay Period Deductions</h3>
         <div class="mountain-img">
             <div class="taxes">
@@ -115,19 +115,19 @@
                     <p>=</p>
                 </div>
                 <div class="tax-output">
-                    <p id="ft-out"></p>
-                    <p id="st-out"></p>
-                    <p id="ss-out"></p>
-                    <p id="mc-out"></p>
-                    <p id="sd-out"></p>
-                    <p id="ri-out"></p>
-                    <p id="mi-out"></p>
+                    <p id="ft-out" class="s"></p>
+                    <p id="st-out" class="s"></p>
+                    <p id="ss-out" class="s"></p>
+                    <p id="mc-out" class="s"></p>
+                    <p id="sd-out" class="s"></p>
+                    <p id="ri-out" class="s"></p>
+                    <p id="mi-out" class="s"></p>
                 </div> 
             </div>
             <hr>
             <div class="tax-total-flex">
                 <p class="total-deductions">Total Deductions</p>
-                <p id="td-out"></p>
+                <p id="td-out" class="s"></p>
             </div>
         </div>
    </section>
@@ -165,7 +165,7 @@
             <h3>How Much of a House Payment Can You Afford?</h3>
             <p>Gross Monthly Income x 33% = </p>
             <p class="paymentp">Maximum Monthly House Payment</p>
-            <p class="monthly-number" id="paymentNumber"></p>  <!-- change the class name -->
+            <p class="monthly-number house-payment" id="paymentNumber"></p>  <!-- change the class name -->
             <button class="calculate" id="houseButton">Calculate</button>
         </div>
     </div>
@@ -203,7 +203,7 @@
                     <th class="balance">$ Balance</th>
                 </tr>
                     <tr>
-                    <td><form><output id="date1" class="date" type="date">03/17/23</form></td>
+                    <td><form><output id="date1" class="date" type="date"></form></td>
                     <td><form><output id="transaction1" class="transaction" type="text"></form></td>
                     <td><form><output id="withdrawal1" class="withdrawal" type="number" min="0" max="5000"></form></td>
                     <td><form><output id="plus1" class="deposit" type="number" min="0" max="5000"></form></td>
